@@ -1,6 +1,6 @@
 # Inventory Management System - Backend
 
-A robust backend service for managing inventory products with user authentication, built with FastAPI and SQL database.
+A simple backend service for managing inventory products with user authentication, built with FastAPI and SQL database.
 
 ## 🚀 Features
 

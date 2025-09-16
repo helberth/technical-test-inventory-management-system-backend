@@ -14,6 +14,7 @@ A robust backend service for managing inventory products with user authenticatio
   - List all products with pagination
   - Get product details by ID
   - Search and filter products
+  - Image upload and management
 
 - **Data Models**
   - User model with authentication details
@@ -67,7 +68,7 @@ A robust backend service for managing inventory products with user authenticatio
 
 Start the development server:
 ```bash
-uvicorn app.main:app --reload
+fastapi dev main.py
 ```
 
 The API will be available at `http://localhost:8000`
@@ -96,6 +97,8 @@ pytest
 │   ├── schemas/          # Pydantic models
 │   ├── services/         # Business logic
 │   └── main.py           # Application entry point
+├── static/               # Static files (images, etc.)
+│   └── images/           # Product images storage
 ├── tests/                # Test cases
 ├── alembic/              # Database migrations
 ├── .env.example          # Example environment variables
